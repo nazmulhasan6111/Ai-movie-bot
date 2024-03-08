@@ -8,13 +8,13 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, CallbackQueryH
 from movies_scraper import search_movies, get_movie
 
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "df405dd77304e8a46bb2a970f49d9668a3124e8c"
 URL = "https://ai-movie-bot.vercel.app"
 bot = Bot(TOKEN)
 
 
 def welcome(update, context) -> None:
-    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome to SB Movies.\n"
+    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome to Ai Movies Bot.\n"
                               f"🔥 Download Your Favourite Movies For 💯 Free And 🍿 Enjoy it.")
     update.message.reply_text("👇 Enter Movie Name 👇")
 
